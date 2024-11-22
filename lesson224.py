@@ -62,6 +62,35 @@ print()
 # print(x)
 # print()
 
+print('='*80)
+
+s2 = set('abc')
+s3 = s2
+s3.add('x')
+print(hex(id(s2)), s2)
+print(hex(id(s3)), s3)
+print()
+
+s3.clear()
+print(hex(id(s2)), s2)
+print(hex(id(s3)), s3)
+print()
+
+s1 = {2, 4.5}
+s4 = s1.copy()
+s4.add('z')
+print(hex(id(s1)), s1)
+print(hex(id(s4)), s4)
+print()
+
+
+
+
+
+
+
+
+
 
 
 
